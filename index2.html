@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="d-flex flex-column">
+            <nav class="page-navbar d-flex flex-column">
+                <img class="spotify_logo" src="./assets/Spotify logo.png">
+                <div class="nav_icons_container">
+                    <div class="icon_container home fs-6"><img src="./assets/homeLogo.svg">Home</div>
+                    <div class="icon_container icon fs-6"><img src="./assets/searchIcon.svg">Search</div>
+                    <div class="icon_container icon fs-6"><img src="./assets/library.svg">You library</div>
+                </div>
+            </nav>
+            <!-- mobile navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mobile-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img class="spotify_logo" src="./assets/Spotify logo.png">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <div class="icon_container home"><img src="./assets/homeLogo.svg"></div>
+                            </a>
+                            <a class="nav-link" href="#">
+                                <div class="icon_container icon"><img src="./assets/library.svg"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="sidebar">
+                <!-- Navigation links -->
+                <div class="navigation_links_container">
+                    <h1 class="fs-6 text-white">Playlists</h1>
+                    <div class="icon"><a href="./index2.html"><img class="text-white bg-white"
+                                src="./assets/navLink1.svg"><span class="m-3 fs-6 links">Create Playlist</span></a>
+                    </div>
+                    <div class="icon"><a href="#"><img class="text-white bg-white heart_icon"
+                                src="./assets/navLink2.svg"><span class="m-3 fs-6">Liked Songs</span></a></div>
+                </div>
+                <!-- album profile -->
+                <div class="album-profile-container">
+                    <img src="./assets/album-profile.svg">
+                </div>
+            </div>
+        </div>
+        <!-- hero section -->
+        <section class="hero-section bg-dark w-100">
+            <!-- row 1 -->
+
+            <div class="d-flex align-items-center pop-up-container">
+                <div>
+                    <img src="./assets/pop-right-now.svg">
+                </div>
+
+                <div class="text-white d-flex flex-column pop-up-description">
+                    <h1 class="fs-6"></h1>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h1 class="fs-6">PLAYLIST</h1>
+                        </div>
+
+                        <div>
+                            <a href="./index.html"> <i class="fa-solid fa-arrow-left back-button a"></i></a>
+                        </div>
+                    </div>
+                    <h1 class="pop-up-text">Pop Right Now</h1>
+                    <h1 class="fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus</h1>
+                    <h1 class="fs-6">Spotify .
+                        860,305 likes.
+                        100 songs, 5 hr 5 min</h1>
+                </div>
+
+
+            </div>
+
+
+
+            <!-- row 2 -->
+            <div class=" d-flex align-items-center song-playing-container">
+                <div>
+                    <i><img src="./assets/playing-icon-three.svg"></i>
+                </div>
+                <div>
+                    <i><img src="./assets/heart.svg"></i>
+                </div>
+                <div>
+                    <i><img src="./assets/dots.svg"></i>
+
+                </div>
+
+
+
+            </div>
+
+            <!-- row 3 -->
+            <div class="text-white container hero-container">
+                <div class="heading-container">
+                    <div>#TITLE</div>
+                    <div>ALBUM</div>
+                    <div>DATE ADDED</div>
+                </div>
+                <div class="heading-container live-play-song">
+                    <div class="playlist-item">
+                        <div><img src="./assets/Polygon 2.svg" alt="logo"></div>
+                        <div><img class="play-list-img" src="./assets/song-img.svg" alt="logo"></div>
+                        <div>
+                            <div class="song-name">We're Good</div>
+                            <div class="song-name">Dua Lipa</div>
+                        </div>
+                    </div>
+                    <div class="song-name">Future Nostalgia (The Moonlight Edition)</div>
+                    <div class="song-name">4일 전</div>
+                    <div class="timer-container">
+                        <div><img class="heart-icon" src="./assets/heart.svg"></div>
+                        <div class="song-name">2:45</div>
+                        <div><img src="./assets/more.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="heading-container">
+                    <div class="playlist-item">
+                        <div><span>2</span><img class="play-list-img" src="./assets/song-img.svg" alt="logo"></div>
+                        <div>
+                            <div class="song-name">We're Good</div>
+                            <div class="song-name">Dua Lipa</div>
+                        </div>
+                    </div>
+                    <div class="song-name">Future Nostalgia (The Moonlight Edition)</div>
+                    <div class="song-name">4일 전</div>
+                    <div class="timer-container">
+                        <div class="song-name">2:45</div>
+                        <div><img src="./assets/more.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="heading-container">
+                    <div class="playlist-item">
+                        <div><span>2 </span><img class="play-list-img" src="./assets/song-img.svg" alt="logo"></div>
+                        <div>
+                            <div class="song-name">We're Good</div>
+                            <div class="song-name">Dua Lipa</div>
+                        </div>
+                    </div>
+                    <div class="song-name">Future Nostalgia (The Moonlight Edition)</div>
+                    <div class="song-name">4일 전</div>
+                    <div class="timer-container">
+                        <div class="song-name">2:45</div>
+                        <div><img src="./assets/more.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="heading-container">
+                    <div class="playlist-item">
+                        <div><span>2</span><img class="play-list-img" src="./assets/song-img.svg" alt="logo"></div>
+                        <div>
+                            <div class="song-name">We're Good</div>
+                            <div class="song-name">Dua Lipa</div>
+                        </div>
+                    </div>
+                    <div class="song-name">Future Nostalgia (The Moonlight Edition)</div>
+                    <div class="song-name">4일 전</div>
+                    <div class="timer-container">
+                        <div class="song-name">2:45</div>
+                        <div><img src="./assets/more.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="heading-container">
+                    <div class="playlist-item">
+                        <div><span>2</span><img class="play-list-img" src="./assets/song-img.svg" alt="logo"></div>
+                        <div>
+                            <div class="song-name">We're Good</div>
+                            <div class="song-name">Dua Lipa</div>
+                        </div>
+                    </div>
+                    <div class="song-name">Future Nostalgia (The Moonlight Edition)</div>
+                    <div class="song-name">4일 전</div>
+                    <div class="timer-container">
+                        <div class="song-name">2:45</div>
+                        <div><img src="./assets/more.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="heading-container">
+                    <div class="playlist-item">
+                        <div><span>2</span><img class="play-list-img" src="./assets/song-img.svg" alt="logo"></div>
+                        <div>
+                            <div class="song-name">We're Good</div>
+                            <div class="song-name">Dua Lipa</div>
+                        </div>
+                    </div>
+                    <div class="song-name">Future Nostalgia (The Moonlight Edition)</div>
+                    <div>4일 전</div>
+                    <div class="timer-container">
+                        <div class="song-name">2:45</div>
+                        <div><img src="./assets/more.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="heading-container">
+                    <div class="playlist-item">
+                        <div><span>2</span><img class="play-list-img" src="./assets/song-img.svg" alt="logo"></div>
+                        <div>
+                            <div class="song-name">We're Good</div>
+                            <div class="song-name">Dua Lipa</div>
+                        </div>
+                    </div>
+                    <div class="song-name">Future Nostalgia (The Moonlight Edition)</div>
+                    <div class="song-name">4일 전</div>
+                    <div class="timer-container">
+                        <div class="song-name">2:45</div>
+                        <div><img src="./assets/more.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="heading-container">
+                    <div class="playlist-item">
+                        <div><span>2</span><img class="play-list-img" src="./assets/song-img.svg" alt="logo"></div>
+                        <div>
+                            <div class="song-name">We're Good</div>
+                            <div class="song-name">Dua Lipa</div>
+                        </div>
+                    </div>
+                    <div class="song-name">Future Nostalgia (The Moonlight Edition)</div>
+                    <div class="song-name">4일 전</div>
+                    <div class="timer-container">
+                        <div class="song-name">2:45</div>
+                        <div><img src="./assets/more.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="d-flex justify-content-between align-items-center p-2">
+            <!-- left -->
+            <div class="d-flex align-items-center">
+                <img class="play-list-img" src="./assets/song-img.svg">
+                <div>
+                    <h1 class="mt-3 footer-song-name">Hold On</h1>
+                    <h1 class="footer-song-name">Justin Bieber</h1>
+                </div>
+                <div class="heart_div">
+                    <i><img src="./assets/heart.svg"></i>
+                    <i class="pip"><img src="./assets/pip.svg"></i>
+                </div>
+            </div>
+            <!-- middle -->
+            <div class="d-flex flex-column align-items-center">
+                <div>
+                    <i><img src="./assets/playing-icon-one.svg"></i>
+                    <i><img src="./assets/playing-icon-two.svg"></i>
+                    <i><img src="./assets/playing-icon-three.svg"></i>
+                    <i><img src="./assets/playing-icon-four.svg"></i>
+                    <i><img src="./assets/playing-icon-five.svg"></i>
+                </div>
+                <div class="progress_icon">
+                    <span>2:11<i><img src="./assets/progress.svg"></i><span>2:42</span>
+                </div>
+            </div>
+            <!-- right -->
+            <div class="right">
+                <i><img src="./assets/footer-right-icon2.svg"></i>
+                <i><img src="./assets/footer-right-icon3.svg"></i>
+                <i><img src="./assets/footer-right-icon4.svg"></i>
+                <i><img src="./assets/footer-right-icon5.svg"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+  
